@@ -5,9 +5,8 @@ SDL_CFLAGS = @SDL_CFLAGS@
 GL_LIBS = @GL_LIBS@
 OPT_LIBS = @OPT_LIBS@
 
-CFLAGS += -Wall $(SDL_CFLAGS) @CFLAGS@
-# LIBS += ../libgfx/src/libgfx.a $(GL_LIBS) $(SDL_LIBS) $(OPT_LIBS) @LIBS@
-LIBS += -lgfx $(GL_LIBS) $(SDL_LIBS) $(OPT_LIBS) @LIBS@
+CFLAGS += -Wall -I../libgfx-1.1.0/include $(SDL_CFLAGS) @CFLAGS@
+LIBS += ../libgfx-1.1.0/src/libgfx.a $(GL_LIBS) $(SDL_LIBS) $(OPT_LIBS) @LIBS@
 
 OBJECTS = arrow.o bait.o firefly.o scene.o tail.o utils.o modes.o @OPT_OBJS@
 PROGRAM = @PROGRAM@
