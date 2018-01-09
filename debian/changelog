@@ -1,0 +1,18 @@
+fireflies (2.05-1) stable; urgency=low
+  * code cleanup
+ -- Matt Perry <guy@somewhere.fscked.org>  Sat, 26 Apr 2003 12:40:00 +0100
+
+fireflies (2.04-1) stable; urgency=low
+  * fixed big bug
+ -- Matt Perry <guy@somewhere.fscked.org>  Wed, 23 Apr 2003 19:20:00 +0100
+
+fireflies (2.03-1) stable; urgency=low
+  * put fireflies.xml where it belongs
+ -- Matt Perry <guy@somewhere.fscked.org>  Wed, 16 Apr 2003 13:27:18 +0100
+
+fireflies (2.02-1) stable; urgency=low
+
+  * Initial Release.
+
+ -- Serge Koenigsmann <serge@doomicile.de>  Sun,  9 Mar 2003 13:27:18 +0100
+

@@ -1,0 +1,14 @@
+fireflies for Debian
+--------------------
+
+Fireflies Screensaver
+
+To use this saver with xscreensaver, add the following lines after the line
+that starts with "programs:" in ~/.xscreensaver.
+
+-- Cut Here --
+  GL:             "Fireflies"  fireflies --root                           \n\
+-- End Here --
+
+
+ -- Serge Koenigsmann <serge@doomicile.de>, Sun,  9 Mar 2003 13:27:18 +0100

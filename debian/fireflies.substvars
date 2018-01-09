@@ -1,0 +1,1 @@
+shlibs:Depends=libc6 (>= 2.3.1-1), libsdl1.2debian (>> 1.2.3), libstdc++2.10-glibc2.2 (>= 1:2.95.4-15), xlibmesa3 | libgl1, xlibmesa3-glu | libglu1, xlibs (>> 4.1.0)

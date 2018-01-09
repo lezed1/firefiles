@@ -1,0 +1,14 @@
+Source: fireflies
+Section: x11
+Priority: optional
+Maintainer: Serge Koenigsmann <serge@doomicile.de>
+Build-Depends: debhelper (>> 3.0.0)
+Standards-Version: 3.5.2
+
+Package: fireflies
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: Fireflies OpenGL screensaver, for xscreensaver or standalone
+ An OpenGL 3D screensaver for xscreensaver.  A bunch of fireflies chase a few
+ baits around the screen, leaving colorful tails which get blown around by the
+ wind.
