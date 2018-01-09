@@ -17,15 +17,15 @@ fireflies.spec.in \
 fireflies.xml \
 install-sh \
 installit.in \
-libgfx-1.0.1.tar.gz \
+libgfx-1.1.0.tar.gz \
 win32/
 
 all:	libgfx/src/libgfx.a
 	cd src && make
 
 libgfx/src/libgfx.a:
-	gunzip -c libgfx-1.0.1.tar.gz | tar x
-	cd libgfx && ./configure && cd src && make
+	gunzip -c libgfx-1.1.0.tar.gz | tar x
+	cd libgfx-1.1.0 && ./configure && cd src && make
 
 install: all
 	sh ./installit $(DESTDIR)
