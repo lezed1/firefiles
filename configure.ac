@@ -53,18 +53,21 @@ CYGWIN*|cygwin*|MINGW*|mingw*)
     OPT_OBJS="main.o canvas_base.o"
     PROGRAM="fireflies"
 
-    AC_CHECK_LIB(GL, glXSwapBuffers,\
+  dnl   AC_CHECK_LIB(GL, glXSwapBuffers,\
+	dnl AC_DEFINE(HAVE_GLX)
+	dnl OPT_OBJS="$OPT_OBJS canvas_glx.o",\
+	dnl AC_CHECK_LIB(MesaGL, glXSwapBuffers,\
+	dnl     AC_DEFINE(HAVE_GLX)
+	dnl     OPT_OBJS="$OPT_OBJS canvas_glx.o"))
 	AC_DEFINE(HAVE_GLX)
-	OPT_OBJS="$OPT_OBJS canvas_glx.o",\
-	AC_CHECK_LIB(MesaGL, glXSwapBuffers,\
-	    AC_DEFINE(HAVE_GLX)
-	    OPT_OBJS="$OPT_OBJS canvas_glx.o"))
+	OPT_OBJS="$OPT_OBJS canvas_glx.o"
 
-    AC_CHECK_LIB(GL, glBegin, \
-	GL_LIBS="-lGL -lGLU", \
-	AC_CHECK_LIB(MesaGL, glBegin, \
-	    [GL_LIBS="-lMesaGL -lMesaGLU"], \
-	    AC_MSG_ERROR([cannot find GL libraries])))
+  dnl   AC_CHECK_LIB(GL, glBegin, \
+	dnl GL_LIBS="-lGL -lGLU", \
+	dnl AC_CHECK_LIB(MesaGL, glBegin, \
+	dnl     [GL_LIBS="-lMesaGL -lMesaGLU"], \
+	dnl     AC_MSG_ERROR([cannot find GL libraries])))
+	GL_LIBS="-lGL -lGLU"
 
     ;;
 esac
